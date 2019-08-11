@@ -2,9 +2,9 @@
   width: 80%;
   margin: auto;
 
-  h1{
-    color: red;
-  }
+  // h1{
+  //   color: red;
+  // }
   input{
     padding: 10px;
     border-radius: 10px;
@@ -13,9 +13,13 @@
     border: 1px solid #ddd;
     min-width: 250px;
   }
-  button{
+  .btn{
     @extend input;
     background: blue;
     color: #fff;
+
+    &:disabled{
+      background: #ddd;
+    }
   }
 }

@@ -41,29 +41,13 @@ class Team extends Component {
         <div>
           <h2>Team1</h2>
           <input type="text" name="team1" onChange={this.onChange} />
-          <input
-            type="number"
-            max="10"
-            name="team1Players"
-            min="1"
-            placeholder="Number of players"
-            onChange={this.onChange}
-          />
         </div>
         <div>
           <h2>Team2</h2>
           <input type="text" name="team2" onChange={this.onChange} />
-          <input
-            type="number"
-            max="10"
-            name="team2Players"
-            min="1"
-            placeholder="Number of players"
-            onChange={this.onChange}
-          />
         </div>
         <br />
-        <button disabled={!diasbled} onClick={this.onSubmit}>
+        <button disabled={!diasbled} onClick={this.onSubmit} className="btn">
           Schedule
         </button>
       </div>
