@@ -1,0 +1,25 @@
+.App{
+  width: 80%;
+  margin: auto;
+
+  // h1{
+  //   color: red;
+  // }
+  input{
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 5px;
+    outline: none;
+    border: 1px solid #ddd;
+    min-width: 250px;
+  }
+  .btn{
+    @extend input;
+    background: blue;
+    color: #fff;
+
+    &:disabled{
+      background: #ddd;
+    }
+  }
+}
